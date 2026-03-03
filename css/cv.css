@@ -1,0 +1,121 @@
+:root {
+    --cv-primary: #1e3a8a;
+    --cv-text: #334155;
+    --cv-bg: #ffffff;
+    --cv-border: #e2e8f0;
+}
+
+body.cv-page {
+    background: #f1f5f9;
+    padding: 3rem 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.cv-container {
+    background: white;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 3rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.cv-header {
+    border-bottom: 2px solid var(--cv-primary);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cv-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--cv-primary);
+}
+
+.cv-header h1 {
+    font-size: 2.5rem;
+    color: var(--cv-primary);
+    font-weight: 800;
+    margin: 0;
+}
+
+.cv-contact {
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--cv-text);
+}
+
+.cv-section {
+    margin-bottom: 2rem;
+}
+
+.cv-section h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--cv-primary);
+    border-bottom: 1px solid var(--cv-border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cv-item {
+    margin-bottom: 1.5rem;
+}
+
+.cv-item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.cv-date {
+    color: var(--cv-primary);
+    font-size: 0.9rem;
+}
+
+.cv-item p {
+    color: var(--cv-text);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.cv-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.cv-skill-tag {
+    background: #f8fafc;
+    border: 1px solid var(--cv-border);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+@media print {
+    body.cv-page {
+        padding: 0;
+        background: white;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+    }
+}
